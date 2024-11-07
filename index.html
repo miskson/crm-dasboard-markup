@@ -9,24 +9,51 @@
 </head>
 
 <body>
-    <aside>
-        <section class="logo">
-            <img class="logo__logo-img" src="./assets/img/logo.png" alt="logo">
-            <h1 class="logo__title">Dashboard</h1>
-            <sub class="logo__subtitle">v.01</sub>
+    <aside class="sidebar">
+        <section class="sidebar__menu">
+            <div class="logo">
+                <img class="logo__logo-img" src="./assets/img/logo.png" alt="logo">
+                <div class="logo__typography-block">
+                    <h1 class="logo__title">Dashboard</h1>
+                    <sub class="logo__subtitle">v.01</sub>
+                </div>
+            </div>
+            <nav class="sidebar__links-list">
+                <a class="sidebar__link" href="#">
+                    <div class="sidebar__link-typography"><img class="sidebar__link-icon" src="./assets/img/key-square.svg"
+                            alt="#">Dashboard</div>
+                </a>
+                <a class="sidebar__link" href="#">
+                    <div class="sidebar__link-typography"><img class="sidebar__link-icon" src="./assets/img/3d-square.svg"
+                            alt="#">Product</div><img class="sidebar__link-arrow" src="./assets/img/menu-arrow.svg" alt=">">
+                </a>
+                <a class="sidebar__link" href="#">
+                    <div class="sidebar__link-typography"><img class="sidebar__link-icon" src="./assets/img/user-square.svg"
+                            alt="#">Customers</div><img class="sidebar__link-arrow" src="./assets/img/menu-arrow.svg"
+                        alt=">">
+                </a>
+                <a class="sidebar__link" href="#">
+                    <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                            src="./assets/img/income-square.svg" alt="#">Income</div><img class="sidebar__link-arrow"
+                        src="./assets/img/menu-arrow.svg" alt=">">
+                </a>
+                <a class="sidebar__link" href="#">
+                    <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                            src="./assets/img/promote-square.svg" alt="#">Promote</div><img class="sidebar__link-arrow"
+                        src="./assets/img/menu-arrow.svg" alt=">">
+                </a>
+                <a class="sidebar__link" href="#">
+                    <div class="sidebar__link-typography"><img class="sidebar__link-icon" src="./assets/img/help-square.svg"
+                            alt="#">Help</div><img class="sidebar__link-arrow" src="./assets/img/menu-arrow.svg" alt=">">
+                </a>
+            </nav>
         </section>
-        <nav>
-            <a href="#"><img src="./assets/img/key-square.svg" alt="#">Dashboard<img src="./assets/img/menu-arrow.svg" alt=">"></a>
-            <a href="#"><img src="./assets/img/3d-square.svg" alt="#">Product<img src="./assets/img/menu-arrow.svg" alt=">"></a>
-            <a href="#"><img src="./assets/img/user-square.svg" alt="#">Customers<img src="./assets/img/menu-arrow.svg" alt=">"></a>
-            <a href="#"><img src="./assets/img/income-square.svg" alt="#">Income<img src="./assets/img/menu-arrow.svg" alt=">"></a>
-            <a href="#"><img src="./assets/img/promote-square.svg" alt="#">Promote<img src="./assets/img/menu-arrow.svg" alt=">"></a>
-            <a href="#"><img src="./assets/img/help-square.svg" alt="#">Help<img src="./assets/img/menu-arrow.svg" alt=">"></a>
-        </nav>
-        <section>
-            <div><img src="./assets/img/user-pic.png" alt="user-avatar"></div>
-            <h5>Evano</h5>
-            <sub>Project Manager</sub>
+        <section class="sidebar__profile">
+            <img class="sidebar__profile-pic" src="./assets/img/user-pic.png" alt="user-avatar">
+            <div class="sidebar__profile-typography">
+                <h5 class="sidebar__profile-name">Evano</h5>
+                <sub class="sidebar__profile-rank">Project Manager</sub>
+            </div>
         </section>
     </aside>
     <main>
@@ -118,13 +145,13 @@
                     <p>Showing data 1 to 8 of 256K entries</p>
                     <nav>
                         <div><img src="./assets/img/nav-arr-left.svg" alt="<"></div>
-                                <div>1</div>
-                                <div>2</div>
-                                <div>3</div>
-                                <div>4</div>
-                                <div>...</div>
-                                <div>40</div>
-                                <div><img src="./assets/img/nav-arr-right.svg" alt=">"></div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>...</div>
+                        <div>40</div>
+                        <div><img src="./assets/img/nav-arr-right.svg" alt=">"></div>
                     </nav>
                 </div>
             </div>

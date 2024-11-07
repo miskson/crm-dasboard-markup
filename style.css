@@ -16,11 +16,100 @@
 
 body {
   font-family: "Poppins";
+  margin: 0;
+  padding: 0;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 306px;
+  border: 1px solid slateblue;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 195px;
+  height: 100px;
+  margin-left: 24px;
+}
 .logo__title {
   font-family: "Poppins";
   font-size: 26px;
   letter-spacing: 1%;
   font-weight: 600;
+  margin: 0;
+}
+.logo__logo-img {
+  margin: 0 14px;
+}
+.logo__typography-block {
+  display: flex;
+  align-items: baseline;
+}
+.logo__subtitle {
+  font-size: 10px;
+  font-weight: 500;
+  color: #838383;
+}
+
+.sidebar__links-list {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #9197b3;
+  border-radius: 8px;
+  width: 250px;
+  height: 46px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 14px 28px;
+}
+.sidebar__link-typography {
+  display: flex;
+  align-items: center;
+}
+.sidebar__link-icon {
+  width: 24px;
+  height: auto;
+  margin: 0 15px 0 10px;
+}
+.sidebar__link-arrow {
+  align-self: center;
+  margin-right: 10px;
+}
+.sidebar__profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 76px;
+  height: 42px;
+}
+.sidebar__profile-pic {
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin-left: 24px;
+}
+.sidebar__profile-name,
+.sidebar__profile-rank {
+  font-weight: 500;
+}
+.sidebar__profile-name {
+  font-size: 14px;
+  margin: 0;
+}
+.sidebar__profile-rank {
+  font-size: 12px;
+  color: #757575;
+}
+.sidebar__profile-typography {
+  margin-left: 10px;
 }
