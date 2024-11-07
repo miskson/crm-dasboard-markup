@@ -18,15 +18,17 @@ body {
   font-family: "Poppins";
   margin: 0;
   padding: 0;
+  background-color: #FAFBFF;
 }
 
 .sidebar {
   display: flex;
+  background-color: #fff;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
   width: 306px;
-  border: 1px solid slateblue;
+  box-shadow: 1px 0px 5px #8383833b;
 }
 
 .logo {
@@ -72,6 +74,11 @@ body {
   font-size: 14px;
   font-weight: 500;
   margin: 14px 28px;
+  transition: 300ms;
+}
+.sidebar__link:hover {
+  background-color: #5932ea;
+  color: white;
 }
 .sidebar__link-typography {
   display: flex;
@@ -81,6 +88,11 @@ body {
   width: 24px;
   height: auto;
   margin: 0 15px 0 10px;
+}
+.sidebar__link:hover .sidebar__link-icon,
+.sidebar__link:hover .sidebar__link-arrow {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(170%)
+    contrast(115%);
 }
 .sidebar__link-arrow {
   align-self: center;
