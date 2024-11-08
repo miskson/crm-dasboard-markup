@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" width__device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CRM Dashboard</title>
 </head>
@@ -63,7 +63,7 @@
             <div class="content__wrapper">
                 <h2 class="content__title">Hello Evano 👋🏼,</h2>
                 <section class="table">
-                    <div class="table__header">
+                    <div class="table__heading">
                         <div class="table__typography">
                             <h3 class="table__title">All Customers</h3>
                             <sub class="table__subtitle">Active members</sub>
@@ -73,96 +73,94 @@
                                 placeholder="Search">
                         </div>
                     </div>
-                    <div class="table__headers-wrapper">
-                        <ul class="content__table-headers-list">
-                            <li class="content__table-header">Customer Name</li>
-                            <li class="content__table-header">Company</li>
-                            <li class="content__table-header">Phone Number</li>
-                            <li class="content__table-header">Email</li>
-                            <li class="content__table-header">Country</li>
-                            <li class="content__table-header">Status</li>
-                        </ul>
-                        <ul class="content__table-entries-list">
-                            <li class="content__table-entry">
-                                <p class="content__table-entry-text">Jane Cooper</p>
-                                <p class="content__table-entry-text">Microsoft</p>
-                                <p class="content__table-entry-text">(255) 555-0118</p>
-                                <p class="content__table-entry-text">jane@microsoft.com</p>
-                                <p class="content__table-entry-text">United states</p>
-                                <strong class="content__table-entry-status">Active</strong>
-                            </li>
-                            <li class="content__table-entry">
-                                <p class="content__table-entry-text">Floyd Miles</p>
-                                <p class="content__table-entry-text">Yahoo</p>
-                                <p class="content__table-entry-text">(205) 555-0100</p>
-                                <p class="content__table-entry-text">floyd@yahoo.com</p>
-                                <p class="content__table-entry-text">Kiribati</p>
-                                <strong class="content__table-entry-status">Inactive</strong>
-                            </li>
-                            <li class="content__table-entry">
-                                <p class="content__table-entry-text">Ronald Richards</p>
-                                <p class="content__table-entry-text">Adobe</p>
-                                <p class="content__table-entry-text">(302) 555-0107</p>
-                                <p class="content__table-entry-text">ronald@adobe.com</p>
-                                <p class="content__table-entry-text">Israel</p>
-                                <strong class="content__table-entry-status">Inactive</strong>
-                            </li>
-                            <li class="content__table-entry">
-                                <p class="content__table-entry-text">Marvin McKinney</p>
-                                <p class="content__table-entry-text">Tesla</p>
-                                <p class="content__table-entry-text">(252) 555-0126</p>
-                                <p class="content__table-entry-text">marvin@tesla.com</p>
-                                <p class="content__table-entry-text">Iran</p>
-                                <strong class="content__table-entry-status">Active</strong>
-                            </li>
-                            <li class="content__table-entry">
-                                <p class="content__table-entry-text">Jerome Bell</p>
-                                <p class="content__table-entry-text">Google</p>
-                                <p class="content__table-entry-text">(629) 555-0129</p>
-                                <p class="content__table-entry-text">jerome@google.com</p>
-                                <p class="content__table-entry-text">Réunion</p>
-                                <strong class="content__table-entry-status">Active</strong>
-                            </li>
-                            <li class="content__table-entry">
-                                <p class="content__table-entry-text">Kathryn Murphy</p>
-                                <p class="content__table-entry-text">Microsoft</p>
-                                <p class="content__table-entry-text">(406) 555-0120</p>
-                                <p class="content__table-entry-text">kathryn@microsoft.com</p>
-                                <p class="content__table-entry-text">Curaçao</p>
-                                <strong class="content__table-entry-status">Active</strong>
-                            </li>
-                            <li class="content__table-entry">
-                                <p class="content__table-entry-text">Jacob Jones</p>
-                                <p class="content__table-entry-text">Yahoo</p>
-                                <p class="content__table-entry-text">(208) 555-0112</p>
-                                <p class="content__table-entry-text">jacob@yahoo.com</p>
-                                <p class="content__table-entry-text">Brazil</p>
-                                <strong class="content__table-entry-status">Active</strong>
-                            </li>
-                            <li class="content__table-entry">
-                                <p class="content__table-entry-text">Kristin Watson</p>
-                                <p class="content__table-entry-text">Facebook</p>
-                                <p class="content__table-entry-text">(704) 555-0127</p>
-                                <p class="content__table-entry-text">kristin@facebook.com</p>
-                                <p class="content__table-entry-text">Åland Islands</p>
-                                <strong class="content__table-entry-status">Inactive</strong>
-                            </li>
-                        </ul>
-                        <div class="table__footer">
-                            <p class="table__footer-stats">Showing data 1 to 8 of 256K entries</p>
-                            <nav class="table__page-selector">
-                                <div class="table__page-selector-back"><img class="table__back-arrow-icon"
-                                        src="./assets/img/nav-arr-left.svg" alt="<"></div>
-                                <div class="table__page-selector-number">1</div>
-                                <div class="table__page-selector-number">2</div>
-                                <div class="table__page-selector-number">3</div>
-                                <div class="table__page-selector-number">4</div>
-                                <div class="table__page-selector-points">...</div>
-                                <div class="table__page-selector-number">40</div>
-                                <div class="table__page-selector-forward"><img class="table__forward-arrow-icon"
-                                        src="./assets/img/nav-arr-right.svg" alt=">"></div>
-                            </nav>
-                        </div>
+                    <table class="table__content">
+                        <tr class="table__headers-list">
+                            <th class="table__header">Customer Name</th>
+                            <th class="table__header">Company</th>
+                            <th class="table__header">Phone Number</th>
+                            <th class="table__header">Email</th>
+                            <th class="table__header">Country</th>
+                            <th class="table__header">Status</th>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Jane Cooper</td>
+                            <td class="table__row-text">Microsoft</td>
+                            <td class="table__row-text">(255) 555-0118</td>
+                            <td class="table__row-text">jane@microsoft.com</td>
+                            <td class="table__row-text">United states</td>
+                            <td class="table__row-status">Active</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Floyd Miles</td>
+                            <td class="table__row-text">Yahoo</td>
+                            <td class="table__row-text">(205) 555-0100</td>
+                            <td class="table__row-text">floyd@yahoo.com</td>
+                            <td class="table__row-text">Kiribati</td>
+                            <td class="table__row-status">Inactive</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Ronald Richards</td>
+                            <td class="table__row-text">Adobe</td>
+                            <td class="table__row-text">(302) 555-0107</td>
+                            <td class="table__row-text">ronald@adobe.com</td>
+                            <td class="table__row-text">Israel</td>
+                            <td class="table__row-status">Inactive</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Marvin McKinney</td>
+                            <td class="table__row-text">Tesla</td>
+                            <td class="table__row-text">(252) 555-0126</td>
+                            <td class="table__row-text">marvin@tesla.com</td>
+                            <td class="table__row-text">Iran</td>
+                            <td class="table__row-status">Active</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Jerome Bell</td>
+                            <td class="table__row-text">Google</td>
+                            <td class="table__row-text">(629) 555-0129</td>
+                            <td class="table__row-text">jerome@google.com</td>
+                            <td class="table__row-text">Réunion</td>
+                            <td class="table__row-status">Active</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Kathryn Murphy</td>
+                            <td class="table__row-text">Microsoft</td>
+                            <td class="table__row-text">(406) 555-0120</td>
+                            <td class="table__row-text">kathryn@microsoft.com</td>
+                            <td class="table__row-text">Curaçao</td>
+                            <td class="table__row-status">Active</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Jacob Jones</td>
+                            <td class="table__row-text">Yahoo</td>
+                            <td class="table__row-text">(208) 555-0112</td>
+                            <td class="table__row-text">jacob@yahoo.com</td>
+                            <td class="table__row-text">Brazil</td>
+                            <td class="table__row-status">Active</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Kristin Watson</td>
+                            <td class="table__row-text">Facebook</td>
+                            <td class="table__row-text">(704) 555-0127</td>
+                            <td class="table__row-text">kristin@facebook.com</td>
+                            <td class="table__row-text">Åland Islands</td>
+                            <td class="table__row-status">Inactive</td>
+                        </tr>
+                    </table>
+                    <div class="table__footer">
+                        <p class="table__footer-stats">Showing data 1 to 8 of 256K entries</p>
+                        <nav class="table__page-selector">
+                            <div class="table__page-selector-back"><img class="table__back-arrow-icon"
+                                    src="./assets/img/nav-arr-left.svg" alt="<"></div>
+                            <div class="table__page-selector-number">1</div>
+                            <div class="table__page-selector-number">2</div>
+                            <div class="table__page-selector-number">3</div>
+                            <div class="table__page-selector-number">4</div>
+                            <div class="table__page-selector-points">...</div>
+                            <div class="table__page-selector-number">40</div>
+                            <div class="table__page-selector-forward"><img class="table__forward-arrow-icon"
+                                    src="./assets/img/nav-arr-right.svg" alt=">"></div>
+                        </nav>
                     </div>
                 </section>
             </div>

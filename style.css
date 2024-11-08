@@ -18,7 +18,7 @@ body {
   font-family: "Poppins";
   margin: 0;
   padding: 0;
-  background-color: #FAFBFF;
+  background-color: #fafbff;
 }
 
 .dashboard-page {
@@ -131,12 +131,116 @@ body {
   margin-left: 10px;
 }
 
-
 .content {
   display: flex;
+  flex: auto;
   align-items: center;
   justify-content: center;
 }
 .content__wrapper {
   align-self: center;
+  width: 968px;
+}
+
+.table {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 0px 5px #8383833b;
+  padding: 38px 30px;
+  height: 812px;
+}
+.table__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  margin-bottom: 40px;
+}
+.table__title {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -1%;
+  padding: 0;
+  margin: 0;
+}
+.table__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -1%;
+  color: #16c098;
+}
+.table__searchbar {
+  display: flex;
+  max-width: 216px;
+  height: 38px;
+  padding: 4px 2px;
+  border-radius: 10px;
+  border: 1px solid #e7e7e7;
+  background-color: #f9fbff;
+  overflow: hidden;
+}
+.table__searchbar-icon {
+  width: 24px;
+  height: auto;
+}
+.table__searchbar-input {
+  background-color: #f9fbff;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: #b5b7c0;
+}
+.table__searchbar-input:focus {
+  color: black;
+}
+.table__content {
+  border-collapse: collapse;
+}
+.table__headers-list {
+  position: relative;
+}
+.table__headers-list::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: -30px;
+  width: 968px;
+  border-bottom: 1px solid #eeeeee;
+}
+.table__headers-list .table__header,
+.table__row-text,
+.table__row-status {
+  color: #b5b7c0;
+  font-size: 14px;
+  letter-spacing: -1%;
+  font-weight: 500;
+}
+.table__row {
+  border-bottom: 1px solid #eeeeee;
+}
+.table__row-text {
+  color: #000;
+  padding: 24px 24px;
+}
+.table__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.table__footer-stats {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b5b7c0;
+}
+.table__page-selector-number,
+.table__page-selector-points {
+  font-size: 12px;
+  font-weight: 400;
+  color: #404b52;
+}
+.table__page-selector {
+  display: flex;
+  align-items: center;
 }
