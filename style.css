@@ -21,6 +21,11 @@ body {
   background-color: #FAFBFF;
 }
 
+.dashboard-page {
+  border: 1px solid red;
+  display: flex;
+}
+
 .sidebar {
   display: flex;
   background-color: #fff;
@@ -124,4 +129,14 @@ body {
 }
 .sidebar__profile-typography {
   margin-left: 10px;
+}
+
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content__wrapper {
+  align-self: center;
 }

@@ -9,154 +9,165 @@
 </head>
 
 <body>
-    <aside class="sidebar">
-        <section class="sidebar__menu">
-            <div class="logo">
-                <img class="logo__logo-img" src="./assets/img/logo.png" alt="logo">
-                <div class="logo__typography-block">
-                    <h1 class="logo__title">Dashboard</h1>
-                    <sub class="logo__subtitle">v.01</sub>
+    <div class="dashboard-page">
+        <aside class="sidebar">
+            <section class="sidebar__menu">
+                <div class="logo">
+                    <img class="logo__logo-img" src="./assets/img/logo.png" alt="logo">
+                    <div class="logo__typography-block">
+                        <h1 class="logo__title">Dashboard</h1>
+                        <sub class="logo__subtitle">v.01</sub>
+                    </div>
                 </div>
-            </div>
-            <nav class="sidebar__links-list">
-                <a class="sidebar__link" href="#">
-                    <div class="sidebar__link-typography"><img class="sidebar__link-icon" src="./assets/img/key-square.svg"
-                            alt="#">Dashboard</div>
-                </a>
-                <a class="sidebar__link" href="#">
-                    <div class="sidebar__link-typography"><img class="sidebar__link-icon" src="./assets/img/3d-square.svg"
-                            alt="#">Product</div><img class="sidebar__link-arrow" src="./assets/img/menu-arrow.svg" alt=">">
-                </a>
-                <a class="sidebar__link" href="#">
-                    <div class="sidebar__link-typography"><img class="sidebar__link-icon" src="./assets/img/user-square.svg"
-                            alt="#">Customers</div><img class="sidebar__link-arrow" src="./assets/img/menu-arrow.svg"
-                        alt=">">
-                </a>
-                <a class="sidebar__link" href="#">
-                    <div class="sidebar__link-typography"><img class="sidebar__link-icon"
-                            src="./assets/img/income-square.svg" alt="#">Income</div><img class="sidebar__link-arrow"
-                        src="./assets/img/menu-arrow.svg" alt=">">
-                </a>
-                <a class="sidebar__link" href="#">
-                    <div class="sidebar__link-typography"><img class="sidebar__link-icon"
-                            src="./assets/img/promote-square.svg" alt="#">Promote</div><img class="sidebar__link-arrow"
-                        src="./assets/img/menu-arrow.svg" alt=">">
-                </a>
-                <a class="sidebar__link" href="#">
-                    <div class="sidebar__link-typography"><img class="sidebar__link-icon" src="./assets/img/help-square.svg"
-                            alt="#">Help</div><img class="sidebar__link-arrow" src="./assets/img/menu-arrow.svg" alt=">">
-                </a>
-            </nav>
-        </section>
-        <section class="sidebar__profile">
-            <img class="sidebar__profile-pic" src="./assets/img/user-pic.png" alt="user-avatar">
-            <div class="sidebar__profile-typography">
-                <h5 class="sidebar__profile-name">Evano</h5>
-                <sub class="sidebar__profile-rank">Project Manager</sub>
-            </div>
-        </section>
-    </aside>
-    <main>
-        <h2>Hello Evano 👋🏼,</h2>
-        <section>
-            <div>
-                <div>
-                    <h3>All Customers</h3>
-                    <sub>Active members</sub>
+                <nav class="sidebar__links-list">
+                    <a class="sidebar__link" href="#">
+                        <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                                src="./assets/img/key-square.svg" alt="#">Dashboard</div>
+                    </a>
+                    <a class="sidebar__link" href="#">
+                        <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                                src="./assets/img/3d-square.svg" alt="#">Product</div><img class="sidebar__link-arrow"
+                            src="./assets/img/menu-arrow.svg" alt=">">
+                    </a>
+                    <a class="sidebar__link" href="#">
+                        <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                                src="./assets/img/user-square.svg" alt="#">Customers</div><img
+                            class="sidebar__link-arrow" src="./assets/img/menu-arrow.svg" alt=">">
+                    </a>
+                    <a class="sidebar__link" href="#">
+                        <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                                src="./assets/img/income-square.svg" alt="#">Income</div><img
+                            class="sidebar__link-arrow" src="./assets/img/menu-arrow.svg" alt=">">
+                    </a>
+                    <a class="sidebar__link" href="#">
+                        <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                                src="./assets/img/promote-square.svg" alt="#">Promote</div><img
+                            class="sidebar__link-arrow" src="./assets/img/menu-arrow.svg" alt=">">
+                    </a>
+                    <a class="sidebar__link" href="#">
+                        <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                                src="./assets/img/help-square.svg" alt="#">Help</div><img class="sidebar__link-arrow"
+                            src="./assets/img/menu-arrow.svg" alt=">">
+                    </a>
+                </nav>
+            </section>
+            <section class="sidebar__profile">
+                <img class="sidebar__profile-pic" src="./assets/img/user-pic.png" alt="user-avatar">
+                <div class="sidebar__profile-typography">
+                    <h5 class="sidebar__profile-name">Evano</h5>
+                    <sub class="sidebar__profile-rank">Project Manager</sub>
                 </div>
-                <div><img src="./assets/img/search.svg" alt="#"><input type="text" placeholder="Search"></div>
+            </section>
+        </aside>
+        <main class="content">
+            <div class="content__wrapper">
+                <h2 class="content__title">Hello Evano 👋🏼,</h2>
+                <section class="table">
+                    <div class="table__header">
+                        <div class="table__typography">
+                            <h3 class="table__title">All Customers</h3>
+                            <sub class="table__subtitle">Active members</sub>
+                        </div>
+                        <div class="table__searchbar"><img class="table__searchbar-icon" src="./assets/img/search.svg"
+                                alt="search-icon"><input class="table__searchbar-input type=" text"
+                                placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="table__headers-wrapper">
+                        <ul class="content__table-headers-list">
+                            <li class="content__table-header">Customer Name</li>
+                            <li class="content__table-header">Company</li>
+                            <li class="content__table-header">Phone Number</li>
+                            <li class="content__table-header">Email</li>
+                            <li class="content__table-header">Country</li>
+                            <li class="content__table-header">Status</li>
+                        </ul>
+                        <ul class="content__table-entries-list">
+                            <li class="content__table-entry">
+                                <p class="content__table-entry-text">Jane Cooper</p>
+                                <p class="content__table-entry-text">Microsoft</p>
+                                <p class="content__table-entry-text">(255) 555-0118</p>
+                                <p class="content__table-entry-text">jane@microsoft.com</p>
+                                <p class="content__table-entry-text">United states</p>
+                                <strong class="content__table-entry-status">Active</strong>
+                            </li>
+                            <li class="content__table-entry">
+                                <p class="content__table-entry-text">Floyd Miles</p>
+                                <p class="content__table-entry-text">Yahoo</p>
+                                <p class="content__table-entry-text">(205) 555-0100</p>
+                                <p class="content__table-entry-text">floyd@yahoo.com</p>
+                                <p class="content__table-entry-text">Kiribati</p>
+                                <strong class="content__table-entry-status">Inactive</strong>
+                            </li>
+                            <li class="content__table-entry">
+                                <p class="content__table-entry-text">Ronald Richards</p>
+                                <p class="content__table-entry-text">Adobe</p>
+                                <p class="content__table-entry-text">(302) 555-0107</p>
+                                <p class="content__table-entry-text">ronald@adobe.com</p>
+                                <p class="content__table-entry-text">Israel</p>
+                                <strong class="content__table-entry-status">Inactive</strong>
+                            </li>
+                            <li class="content__table-entry">
+                                <p class="content__table-entry-text">Marvin McKinney</p>
+                                <p class="content__table-entry-text">Tesla</p>
+                                <p class="content__table-entry-text">(252) 555-0126</p>
+                                <p class="content__table-entry-text">marvin@tesla.com</p>
+                                <p class="content__table-entry-text">Iran</p>
+                                <strong class="content__table-entry-status">Active</strong>
+                            </li>
+                            <li class="content__table-entry">
+                                <p class="content__table-entry-text">Jerome Bell</p>
+                                <p class="content__table-entry-text">Google</p>
+                                <p class="content__table-entry-text">(629) 555-0129</p>
+                                <p class="content__table-entry-text">jerome@google.com</p>
+                                <p class="content__table-entry-text">Réunion</p>
+                                <strong class="content__table-entry-status">Active</strong>
+                            </li>
+                            <li class="content__table-entry">
+                                <p class="content__table-entry-text">Kathryn Murphy</p>
+                                <p class="content__table-entry-text">Microsoft</p>
+                                <p class="content__table-entry-text">(406) 555-0120</p>
+                                <p class="content__table-entry-text">kathryn@microsoft.com</p>
+                                <p class="content__table-entry-text">Curaçao</p>
+                                <strong class="content__table-entry-status">Active</strong>
+                            </li>
+                            <li class="content__table-entry">
+                                <p class="content__table-entry-text">Jacob Jones</p>
+                                <p class="content__table-entry-text">Yahoo</p>
+                                <p class="content__table-entry-text">(208) 555-0112</p>
+                                <p class="content__table-entry-text">jacob@yahoo.com</p>
+                                <p class="content__table-entry-text">Brazil</p>
+                                <strong class="content__table-entry-status">Active</strong>
+                            </li>
+                            <li class="content__table-entry">
+                                <p class="content__table-entry-text">Kristin Watson</p>
+                                <p class="content__table-entry-text">Facebook</p>
+                                <p class="content__table-entry-text">(704) 555-0127</p>
+                                <p class="content__table-entry-text">kristin@facebook.com</p>
+                                <p class="content__table-entry-text">Åland Islands</p>
+                                <strong class="content__table-entry-status">Inactive</strong>
+                            </li>
+                        </ul>
+                        <div class="table__footer">
+                            <p class="table__footer-stats">Showing data 1 to 8 of 256K entries</p>
+                            <nav class="table__page-selector">
+                                <div class="table__page-selector-back"><img class="table__back-arrow-icon"
+                                        src="./assets/img/nav-arr-left.svg" alt="<"></div>
+                                <div class="table__page-selector-number">1</div>
+                                <div class="table__page-selector-number">2</div>
+                                <div class="table__page-selector-number">3</div>
+                                <div class="table__page-selector-number">4</div>
+                                <div class="table__page-selector-points">...</div>
+                                <div class="table__page-selector-number">40</div>
+                                <div class="table__page-selector-forward"><img class="table__forward-arrow-icon"
+                                        src="./assets/img/nav-arr-right.svg" alt=">"></div>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div>
-                <ul>
-                    <li>Customer Name</li>
-                    <li>Company</li>
-                    <li>Phone Number</li>
-                    <li>Email</li>
-                    <li>Country</li>
-                    <li>Status</li>
-                </ul>
-                <ul>
-                    <li>
-                        <p>Jane Cooper</p>
-                        <p>Microsoft</p>
-                        <p>(255) 555-0118</p>
-                        <p>jane@microsoft.com</p>
-                        <p>United states</p>
-                        <strong>Active</strong>
-                    </li>
-                    <li>
-                        <p>Floyd Miles</p>
-                        <p>Yahoo</p>
-                        <p>(205) 555-0100</p>
-                        <p>floyd@yahoo.com</p>
-                        <p>Kiribati</p>
-                        <strong>Inactive</strong>
-                    </li>
-                    <li>
-                        <p>Ronald Richards</p>
-                        <p>Adobe</p>
-                        <p>(302) 555-0107</p>
-                        <p>ronald@adobe.com</p>
-                        <p>Israel</p>
-                        <strong>Inactive</strong>
-                    </li>
-                    <li>
-                        <p>Marvin McKinney</p>
-                        <p>Tesla</p>
-                        <p>(252) 555-0126</p>
-                        <p>marvin@tesla.com</p>
-                        <p>Iran</p>
-                        <strong>Active</strong>
-                    </li>
-                    <li>
-                        <p>Jerome Bell</p>
-                        <p>Google</p>
-                        <p>(629) 555-0129</p>
-                        <p>jerome@google.com</p>
-                        <p>Réunion</p>
-                        <strong>Active</strong>
-                    </li>
-                    <li>
-                        <p>Kathryn Murphy</p>
-                        <p>Microsoft</p>
-                        <p>(406) 555-0120</p>
-                        <p>kathryn@microsoft.com</p>
-                        <p>Curaçao</p>
-                        <strong>Active</strong>
-                    </li>
-                    <li>
-                        <p>Jacob Jones</p>
-                        <p>Yahoo</p>
-                        <p>(208) 555-0112</p>
-                        <p>jacob@yahoo.com</p>
-                        <p>Brazil</p>
-                        <strong>Active</strong>
-                    </li>
-                    <li>
-                        <p>Kristin Watson</p>
-                        <p>Facebook</p>
-                        <p>(704) 555-0127</p>
-                        <p>kristin@facebook.com</p>
-                        <p>Åland Islands</p>
-                        <strong>Inactive</strong>
-                    </li>
-                </ul>
-                <div>
-                    <p>Showing data 1 to 8 of 256K entries</p>
-                    <nav>
-                        <div><img src="./assets/img/nav-arr-left.svg" alt="<"></div>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                        <div>...</div>
-                        <div>40</div>
-                        <div><img src="./assets/img/nav-arr-right.svg" alt=">"></div>
-                    </nav>
-                </div>
-            </div>
-        </section>
-    </main>
+        </main>
+    </div>
     <script src="./script.js"></script>
 </body>
 
