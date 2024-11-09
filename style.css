@@ -22,15 +22,18 @@ body {
 }
 
 .dashboard-page {
-  display: flex;
+  height: 100vh;
 }
-
+.sidebar-mobile {
+  display: none;
+}
 .sidebar {
   display: flex;
   background-color: #fff;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
+  position: fixed;
   width: 306px;
   box-shadow: 1px 0px 5px #8383833b;
 }
@@ -135,6 +138,11 @@ body {
   flex: auto;
   align-items: center;
   justify-content: center;
+  margin-left: 58px;
+}
+.content__title {
+  font-size: 24px;
+  font-weight: 500;
 }
 .content__wrapper {
   align-self: center;
@@ -238,12 +246,12 @@ body {
 .table__row-status_active .table__row-pill {
   background-color: #16c09859;
   color: #008767;
-  border-color: #00B087;
+  border-color: #00b087;
 }
 .table__row-status_inactive .table__row-pill {
-  background-color: #FFC5C5;
-  color: #DF0404;
-  border-color: #DF0404;
+  background-color: #ffc5c5;
+  color: #df0404;
+  border-color: #df0404;
 }
 .table__row {
   border-bottom: 1px solid #eeeeee;
@@ -309,7 +317,208 @@ body {
 }
 
 .table__page-selector-back:hover .table__back-arrow-icon,
-.table__page-selector-forward:hover .table__forward-arrow-icon{
+.table__page-selector-forward:hover .table__forward-arrow-icon {
   filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(350%)
     contrast(100%);
+}
+
+@media screen and (max-width: 1600px) {
+  .content {
+    margin-left: 368px;
+    margin-right: 20px;
+  }
+
+  .content__wrapper {
+    margin-bottom: 20px;
+  }
+
+  .table__headers-list .table__header,
+  .table__row-text,
+  .table__row-status {
+    font-size: 12px;
+  }
+  .table {
+    height: auto;
+  }
+  .table__headers-list::after {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidebar__link {
+    border-radius: 8px;
+    width: 250px;
+    height: 46px;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 10px 24px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content__title {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .table__title {
+    font-size: 18px;
+  }
+  .table__subtitle {
+    font-size: 12px;
+  }
+  .table__row-pill {
+    padding: 2px 6px;
+    width: 50px;
+    height: 29px;
+    float: right;
+  }
+
+  .sidebar__link {
+    border-radius: 8px;
+    width: 250px;
+    height: 46px;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 10px 24px;
+  }
+
+  .table__footer-stats {
+    font-size: 12px;
+  }
+
+  .table__headers-list .table__header,
+  .table__row-text,
+  .table__row-status {
+    font-size: 10px;
+    text-align: center;
+  }
+  .table__footer {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .dashboard-page {
+    height: auto;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    width: fit-content;
+  }
+  .logo__title {
+    font-size: 14px;
+  }
+  .sidebar-mobile {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .sidebar-mobile__links-list {
+    display: flex;
+    align-content: center;
+  }
+  .sidebar-mobile__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #9197b3;
+    height: 46px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 14px 15px;
+    transition: 300ms;
+  }
+  .sidebar-mobile__link:hover {
+    background-color: #5932ea;
+    color: white;
+  }
+  .sidebar-mobile__link-typography {
+    display: flex;
+    align-items: center;
+  }
+  .sidebar-mobile__link-icon {
+    height: auto;
+    margin-right: 5px;
+  }
+  .sidebar-mobile__link:hover .sidebar-mobile__link-icon,
+  .sidebar-mobile__link:hover .sidebar-mobile__link-arrow {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(170%)
+      contrast(115%);
+  }
+  .sidebar-mobile__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+  }
+  .sidebar-mobile__profile-pic {
+    width: 42px;
+    height: 42px;
+  }
+  .sidebar-mobile__profile-name {
+    font-weight: 500;
+  }
+  .sidebar-mobile__profile-name {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+  }
+  .sidebar__profile-typography {
+    margin-left: 10px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .content {
+    margin: 0 20px;
+    max-width: 95%;
+  }
+  .content__title {
+    font-size: 24px;
+  }
+  .table {
+    padding: 30px;
+  }
+  .table__title {
+    font-size: 22px;
+  }
+  .table__subtitle {
+    font-size: 20px;
+  }
+  .table__searchbar-input {
+    font-size: 18px;
+  }
+  .table__headers-list .table__header,
+  .table__row-text,
+  .table__row-status {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .table__page-selector-number,
+  .table__page-selector-points {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 10px;
+    color: #404b52;
+  }
+  .table__forward-arrow-icon,
+  .table__back-arrow-icon {
+    width: 14px;
+  }
+  .table__page-selector-forward,
+  .table__page-selector-back {
+    padding: 10px;
+  }
+  .table__footer-stats {
+    font-size: 16px;
+  }
 }
