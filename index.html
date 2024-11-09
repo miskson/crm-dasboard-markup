@@ -3,132 +3,226 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" width__device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CRM Dashboard</title>
 </head>
 
 <body>
-    <aside>
-        <section>
-            <h1>Dashboard</h1>
-            <sub>v.01</sub>
-        </section>
-        <ul>
-            <li>Dashboard<span>></span></li>
-            <li>Product<span>></span></li>
-            <li>Customers<span>></span></li>
-            <li>Income<span>></span></li>
-            <li>Promote<span>></span></li>
-            <li>Help<span>></span></li>
-        </ul>
-        <section>
-            <div><img src="" alt="userpic"></div>
-            <h5>Evano</h5>
-            <sub>Project Manager</sub>
-        </section>
-    </aside>
-    <main>
-        <h2>Hello Evano,</h2>
-        <section>
-            <div>
-                <div>
-                    <h3>All Customers</h3>
-                    <sub>Active members</sub>
-                </div>
-                <div><input type="text" placeholder="Search"></div>
-            </div>
-            <div>
-                <ul>
-                    <li>Customer Name</li>
-                    <li>Company</li>
-                    <li>Phone Number</li>
-                    <li>Email</li>
-                    <li>Country</li>
-                    <li>Status</li>
-                </ul>
-                <ul>
-                    <li>
-                        <p>Jane Cooper</p>
-                        <p>Microsoft</p>
-                        <p>(255) 555-0118</p>
-                        <p>jane@microsoft.com</p>
-                        <p>United states</p>
-                        <strong>Active</strong>
-                    </li>
-                    <li>
-                        <p>Floyd Miles</p>
-                        <p>Yahoo</p>
-                        <p>(205) 555-0100</p>
-                        <p>floyd@yahoo.com</p>
-                        <p>Kiribati</p>
-                        <strong>Inactive</strong>
-                    </li>
-                    <li>
-                        <p>Ronald Richards</p>
-                        <p>Adobe</p>
-                        <p>(302) 555-0107</p>
-                        <p>ronald@adobe.com</p>
-                        <p>Israel</p>
-                        <strong>Inactive</strong>
-                    </li>
-                    <li>
-                        <p>Marvin McKinney</p>
-                        <p>Tesla</p>
-                        <p>(252) 555-0126</p>
-                        <p>marvin@tesla.com</p>
-                        <p>Iran</p>
-                        <strong>Active</strong>
-                    </li>
-                    <li>
-                        <p>Jerome Bell</p>
-                        <p>Google</p>
-                        <p>(629) 555-0129</p>
-                        <p>jerome@google.com</p>
-                        <p>Réunion</p>
-                        <strong>Active</strong>
-                    </li>
-                    <li>
-                        <p>Kathryn Murphy</p>
-                        <p>Microsoft</p>
-                        <p>(406) 555-0120</p>
-                        <p>kathryn@microsoft.com</p>
-                        <p>Curaçao</p>
-                        <strong>Active</strong>
-                    </li>
-                    <li>
-                        <p>Jacob Jones</p>
-                        <p>Yahoo</p>
-                        <p>(208) 555-0112</p>
-                        <p>jacob@yahoo.com</p>
-                        <p>Brazil</p>
-                        <strong>Active</strong>
-                    </li>
-                    <li>
-                        <p>Kristin Watson</p>
-                        <p>Facebook</p>
-                        <p>(704) 555-0127</p>
-                        <p>kristin@facebook.com</p>
-                        <p>Åland Islands</p>
-                        <strong>Inactive</strong>
-                    </li>
-                </ul>
-                <div>
-                    <p>Showing data 1 to 8 of 256K entries</p>
-                    <nav>
-                        <div><</div>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        <div>4</div>
-                        <div>...</div>
-                        <div>40</div>
-                        <div>></div>
-                    </nav>
+    <div class="dashboard-page">
+        <nav class="sidebar-mobile">
+            <div class="logo">
+                <img class="logo__logo-img" src="./assets/img/logo.png" alt="logo">
+                <div class="logo__typography-block">
+                    <!-- <h1 class="logo__title">Dashboard</h1> -->
+                    <sub class="logo__subtitle">v.01</sub>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="sidebar-mobile__links-list">
+                <a class="sidebar-mobile__link" href="#">
+                    <div class="sidebar-mobile__link-typography"><img class="sidebar-mobile__link-icon"
+                            src="./assets/img/key-square.svg" alt="#">Dashboard</div>
+                </a>
+                <a class="sidebar-mobile__link" href="#">
+                    <div class="sidebar-mobile__link-typography"><img class="sidebar-mobile__link-icon"
+                            src="./assets/img/3d-square.svg" alt="#">Product</div>
+                </a>
+                <a class="sidebar-mobile__link" href="#">
+                    <div class="sidebar-mobile__link-typography"><img class="sidebar-mobile__link-icon"
+                            src="./assets/img/user-square.svg" alt="#">Customers</div>
+                </a>
+                <a class="sidebar-mobile__link" href="#">
+                    <div class="sidebar-mobile__link-typography"><img class="sidebar-mobile__link-icon"
+                            src="./assets/img/income-square.svg" alt="#">Income</div>
+                </a>
+                <a class="sidebar-mobile__link" href="#">
+                    <div class="sidebar-mobile__link-typography"><img class="sidebar-mobile__link-icon"
+                            src="./assets/img/promote-square.svg" alt="#">Promote</div>
+                </a>
+                <a class="sidebar-mobile__link" href="#">
+                    <div class="sidebar-mobile__link-typography"><img class="sidebar-mobile__link-icon"
+                            src="./assets/img/help-square.svg" alt="#">Help</div>
+                </a>
+            </div>
+            <section class="sidebar-mobile__profile">
+                <div class="sidebar-mobile__profile-typography">
+                    <img class="sidebar-mobile__profile-pic" src="./assets/img/user-pic.png" alt="user-avatar">
+                    <h5 class="sidebar-mobile__profile-name">Evano</h5>
+                </div>
+            </section>
+        </nav>
+        <aside class="sidebar">
+            <section class="sidebar__menu">
+                <div class="logo">
+                    <img class="logo__logo-img" src="./assets/img/logo.png" alt="logo">
+                    <div class="logo__typography-block">
+                        <h1 class="logo__title">Dashboard</h1>
+                        <sub class="logo__subtitle">v.01</sub>
+                    </div>
+                </div>
+                <nav class="sidebar__links-list">
+                    <a class="sidebar__link" href="#">
+                        <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                                src="./assets/img/key-square.svg" alt="#">Dashboard</div>
+                    </a>
+                    <a class="sidebar__link" href="#">
+                        <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                                src="./assets/img/3d-square.svg" alt="#">Product</div><img class="sidebar__link-arrow"
+                            src="./assets/img/menu-arrow.svg" alt=">">
+                    </a>
+                    <a class="sidebar__link" href="#">
+                        <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                                src="./assets/img/user-square.svg" alt="#">Customers</div><img
+                            class="sidebar__link-arrow" src="./assets/img/menu-arrow.svg" alt=">">
+                    </a>
+                    <a class="sidebar__link" href="#">
+                        <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                                src="./assets/img/income-square.svg" alt="#">Income</div><img
+                            class="sidebar__link-arrow" src="./assets/img/menu-arrow.svg" alt=">">
+                    </a>
+                    <a class="sidebar__link" href="#">
+                        <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                                src="./assets/img/promote-square.svg" alt="#">Promote</div><img
+                            class="sidebar__link-arrow" src="./assets/img/menu-arrow.svg" alt=">">
+                    </a>
+                    <a class="sidebar__link" href="#">
+                        <div class="sidebar__link-typography"><img class="sidebar__link-icon"
+                                src="./assets/img/help-square.svg" alt="#">Help</div><img class="sidebar__link-arrow"
+                            src="./assets/img/menu-arrow.svg" alt=">">
+                    </a>
+                </nav>
+            </section>
+            <section class="sidebar__profile">
+                <img class="sidebar__profile-pic" src="./assets/img/user-pic.png" alt="user-avatar">
+                <div class="sidebar__profile-typography">
+                    <h5 class="sidebar__profile-name">Evano</h5>
+                    <sub class="sidebar__profile-rank">Project Manager</sub>
+                </div>
+            </section>
+        </aside>
+        <main class="content">
+            <div class="content__wrapper">
+                <h2 class="content__title">Hello Evano 👋🏼,</h2>
+                <section class="table">
+                    <div class="table__heading">
+                        <div class="table__typography">
+                            <h3 class="table__title">All Customers</h3>
+                            <sub class="table__subtitle">Active members</sub>
+                        </div>
+                        <div class="table__searchbar"><img class="table__searchbar-icon" src="./assets/img/search.svg"
+                                alt="search-icon"><input class="table__searchbar-input type=" text"
+                                placeholder="Search">
+                        </div>
+                    </div>
+                    <table class="table__content">
+                        <tr class="table__headers-list">
+                            <th class="table__header">Customer Name</th>
+                            <th class="table__header">Company</th>
+                            <th class="table__header">Phone Number</th>
+                            <th class="table__header">Email</th>
+                            <th class="table__header">Country</th>
+                            <th class="table__header">Status</th>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Jane Cooper</td>
+                            <td class="table__row-text">Microsoft</td>
+                            <td class="table__row-text">(255) 555-0118</td>
+                            <td class="table__row-text">jane@microsoft.com</td>
+                            <td class="table__row-text">United states</td>
+                            <td class="table__row-status table__row-status_active">
+                                <div class="table__row-pill">Active</div>
+                            </td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Floyd Miles</td>
+                            <td class="table__row-text">Yahoo</td>
+                            <td class="table__row-text">(205) 555-0100</td>
+                            <td class="table__row-text">floyd@yahoo.com</td>
+                            <td class="table__row-text">Kiribati</td>
+                            <td class="table__row-status table__row-status_inactive">
+                                <div class="table__row-pill">Inactive</div>
+                            </td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Ronald Richards</td>
+                            <td class="table__row-text">Adobe</td>
+                            <td class="table__row-text">(302) 555-0107</td>
+                            <td class="table__row-text">ronald@adobe.com</td>
+                            <td class="table__row-text">Israel</td>
+                            <td class="table__row-status table__row-status_inactive">
+                                <div class="table__row-pill">Inactive</div>
+                            </td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Marvin McKinney</td>
+                            <td class="table__row-text">Tesla</td>
+                            <td class="table__row-text">(252) 555-0126</td>
+                            <td class="table__row-text">marvin@tesla.com</td>
+                            <td class="table__row-text">Iran</td>
+                            <td class="table__row-status table__row-status_active">
+                                <div class="table__row-pill">Active</div>
+                            </td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Jerome Bell</td>
+                            <td class="table__row-text">Google</td>
+                            <td class="table__row-text">(629) 555-0129</td>
+                            <td class="table__row-text">jerome@google.com</td>
+                            <td class="table__row-text">Réunion</td>
+                            <td class="table__row-status table__row-status_active">
+                                <div class="table__row-pill">Active</div>
+                            </td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Kathryn Murphy</td>
+                            <td class="table__row-text">Microsoft</td>
+                            <td class="table__row-text">(406) 555-0120</td>
+                            <td class="table__row-text">kathryn@microsoft.com</td>
+                            <td class="table__row-text">Curaçao</td>
+                            <td class="table__row-status table__row-status_active">
+                                <div class="table__row-pill">Active</div>
+                            </td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Jacob Jones</td>
+                            <td class="table__row-text">Yahoo</td>
+                            <td class="table__row-text">(208) 555-0112</td>
+                            <td class="table__row-text">jacob@yahoo.com</td>
+                            <td class="table__row-text">Brazil</td>
+                            <td class="table__row-status table__row-status_active">
+                                <div class="table__row-pill">Active</div>
+                            </td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__row-text">Kristin Watson</td>
+                            <td class="table__row-text">Facebook</td>
+                            <td class="table__row-text">(704) 555-0127</td>
+                            <td class="table__row-text">kristin@facebook.com</td>
+                            <td class="table__row-text">Åland Islands</td>
+                            <td class="table__row-status table__row-status_inactive">
+                                <div class="table__row-pill">Inactive</div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="table__footer">
+                        <p class="table__footer-stats">Showing data 1 to 8 of 256K entries</p>
+                        <nav class="table__page-selector">
+                            <div class="table__page-selector-back"><img class="table__back-arrow-icon"
+                                    src="./assets/img/nav-arr-left.svg" alt="<"></div>
+                            <div class="table__page-selector-number">1</div>
+                            <div class="table__page-selector-number">2</div>
+                            <div class="table__page-selector-number">3</div>
+                            <div class="table__page-selector-number">4</div>
+                            <div class="table__page-selector-points">...</div>
+                            <div class="table__page-selector-number">40</div>
+                            <div class="table__page-selector-forward"><img class="table__forward-arrow-icon"
+                                    src="./assets/img/nav-arr-right.svg" alt=">"></div>
+                        </nav>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
     <script src="./script.js"></script>
 </body>
 
