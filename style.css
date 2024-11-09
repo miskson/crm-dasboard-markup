@@ -22,7 +22,6 @@ body {
 }
 
 .dashboard-page {
-  border: 1px solid red;
   display: flex;
 }
 
@@ -146,7 +145,7 @@ body {
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 1px 0px 5px #8383833b;
-  padding: 38px 30px;
+  padding: 38px 30px 0px 30px;
   height: 812px;
 }
 .table__heading {
@@ -159,14 +158,12 @@ body {
 .table__title {
   font-size: 22px;
   font-weight: 500;
-  letter-spacing: -1%;
   padding: 0;
   margin: 0;
 }
 .table__subtitle {
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: -1%;
   color: #16c098;
 }
 .table__searchbar {
@@ -196,9 +193,17 @@ body {
 }
 .table__content {
   border-collapse: collapse;
+  width: 100%;
 }
 .table__headers-list {
   position: relative;
+}
+.table__header {
+  padding: 14px 0;
+  text-align: left;
+}
+.table__header:last-child {
+  text-align: center;
 }
 .table__headers-list::after {
   content: "";
@@ -214,20 +219,44 @@ body {
 .table__row-status {
   color: #b5b7c0;
   font-size: 14px;
-  letter-spacing: -1%;
   font-weight: 500;
+}
+.table__row-status {
+  padding: 2px 4px;
+}
+.table__row-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 4px 12px;
+  width: 80px;
+  height: 29px;
+  float: right;
+}
+.table__row-status_active .table__row-pill {
+  background-color: #16c09859;
+  color: #008767;
+  border-color: #00B087;
+}
+.table__row-status_inactive .table__row-pill {
+  background-color: #FFC5C5;
+  color: #DF0404;
+  border-color: #DF0404;
 }
 .table__row {
   border-bottom: 1px solid #eeeeee;
 }
 .table__row-text {
   color: #000;
-  padding: 24px 24px;
+  padding: 24px 0px;
 }
 .table__footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .table__footer-stats {
   font-size: 14px;
@@ -243,4 +272,44 @@ body {
 .table__page-selector {
   display: flex;
   align-items: center;
+}
+.table__page-selector-number,
+.table__page-selector-back,
+.table__page-selector-forward,
+.table__page-selector-points {
+  border: 1px solid #eeeeee;
+  font-size: 12px;
+  width: 25px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin: 0 4px;
+  background-color: #f5f5f5;
+  transition: 200ms;
+  cursor: pointer;
+}
+.table__page-selector-points {
+  border: none;
+  background-color: transparent;
+}
+.table__page-selector-forward {
+  margin-right: 0;
+}
+.table__page-selector-back {
+  margin-left: 0;
+}
+.table__page-selector-number:hover,
+.table__page-selector-back:hover,
+.table__page-selector-forward:hover {
+  color: #ffffff;
+  background-color: #5932ea;
+  border-color: #5932ea;
+}
+
+.table__page-selector-back:hover .table__back-arrow-icon,
+.table__page-selector-forward:hover .table__forward-arrow-icon{
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(350%)
+    contrast(100%);
 }
