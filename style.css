@@ -398,7 +398,7 @@ body {
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 800px) {
   .dashboard-page {
     height: auto;
   }
@@ -409,15 +409,14 @@ body {
     margin-left: 0;
     width: fit-content;
   }
-  .logo__title {
-    font-size: 14px;
-  }
+
   .sidebar-mobile {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    gap: 10px;
     align-items: center;
     background-color: #ffffff;
+    overflow-x: auto;
   }
   .sidebar-mobile__links-list {
     display: flex;
@@ -430,7 +429,7 @@ body {
     text-decoration: none;
     color: #9197b3;
     height: 46px;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 500;
     padding: 14px 15px;
     transition: 300ms;
@@ -462,6 +461,7 @@ body {
   .sidebar-mobile__profile-pic {
     width: 42px;
     height: 42px;
+    margin: 0 14px;
   }
   .sidebar-mobile__profile-name {
     font-weight: 500;
@@ -482,43 +482,93 @@ body {
     max-width: 95%;
   }
   .content__title {
-    font-size: 24px;
-  }
-  .table {
-    padding: 30px;
-  }
-  .table__title {
-    font-size: 22px;
-  }
-  .table__subtitle {
     font-size: 20px;
   }
-  .table__searchbar-input {
+  .table {
+    padding: 20px;
+  }
+  .table__title {
     font-size: 18px;
+  }
+  .table__subtitle {
+    font-size: 14px;
+  }
+  .table__searchbar {
+    padding: 0 2px;
+  }
+  .table__searchbar-input {
+    font-size: 14px;
   }
   .table__headers-list .table__header,
   .table__row-text,
   .table__row-status {
-    font-size: 16px;
+    font-size: 10px;
     text-align: center;
   }
-
+  .table__footer {
+    flex-direction: column-reverse;
+  }
   .table__page-selector-number,
   .table__page-selector-points {
-    font-size: 22px;
+    font-size: 10px;
     font-weight: 400;
-    padding: 10px;
+    padding: 4px;
     color: #404b52;
   }
   .table__forward-arrow-icon,
   .table__back-arrow-icon {
-    width: 14px;
+    width: 10px;
   }
   .table__page-selector-forward,
   .table__page-selector-back {
-    padding: 10px;
+    padding: 4px;
   }
   .table__footer-stats {
-    font-size: 16px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content__title {
+    margin-left: 6px;
+    font-size: 18px;
+  }
+
+  .table {
+    padding: 14px;
+  }
+  .table__headers-list .table__header,
+  .table__row-text,
+  .table__row-status {
+    font-size: 8px;
+  }
+  .table__row-pill {
+    padding: 0px;
+  }
+  .table__heading {
+    margin-bottom: 20px;
+  }
+  .table__title {
+    font-size: 14px;
+  }
+  .table__subtitle {
+    font-size: 12px;
+  }
+  .table__searchbar {
+    max-width: 160px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .content__title {
+    margin-left: 12px;
+    font-size: 18px;
+  }
+
+  .table {
+    padding: 15px 5px;
+  }
+  .table__searchbar {
+    height: 36px;
   }
 }
