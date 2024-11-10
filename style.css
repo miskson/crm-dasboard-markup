@@ -576,4 +576,10 @@ body {
   .table__row-pill {
     width: 40px;
   }
+  .table__page-selector-number,
+  .table__page-selector-points,
+  .table__page-selector-forward,
+  .table__page-selector-back {
+    padding: 0px;
+  }
 }
