@@ -561,14 +561,19 @@ body {
 
 @media screen and (max-width: 360px) {
   .content__title {
-    margin-left: 12px;
+    margin-left: 0px;
     font-size: 18px;
   }
 
   .table {
-    padding: 15px 5px;
+    padding: 15px 0px;
+    box-shadow: none;
+    background-color: transparent;
   }
   .table__searchbar {
     height: 36px;
+  }
+  .table__row-pill {
+    width: 40px;
   }
 }
