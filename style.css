@@ -42,8 +42,8 @@ body {
   display: flex;
   align-items: center;
   width: 195px;
-  height: 100px;
-  margin-left: 24px;
+  height: 107px;
+  margin-left: 14px;
 }
 .logo__title {
   font-family: "Poppins";
@@ -77,10 +77,10 @@ body {
   color: #9197b3;
   border-radius: 8px;
   width: 250px;
-  height: 46px;
+  height: 47px;
   font-size: 14px;
   font-weight: 500;
-  margin: 14px 28px;
+  margin: 9px 26px;
   transition: 300ms;
 }
 .sidebar__link:hover {
@@ -143,6 +143,7 @@ body {
 .content__title {
   font-size: 24px;
   font-weight: 500;
+  margin: 30px 0px 60px 0;
 }
 .content__wrapper {
   align-self: center;
@@ -177,7 +178,7 @@ body {
 .table__searchbar {
   display: flex;
   max-width: 216px;
-  height: 38px;
+  height: 26px;
   padding: 4px 2px;
   border-radius: 10px;
   border: 1px solid #e7e7e7;
@@ -238,7 +239,8 @@ body {
   justify-content: center;
   border: 1px solid;
   border-radius: 4px;
-  padding: 4px 12px;
+  padding: 0px 2px;
+  font-size: 14px;
   width: 80px;
   height: 29px;
   float: right;
@@ -264,7 +266,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 .table__footer-stats {
   font-size: 14px;
@@ -324,8 +326,25 @@ body {
 
 @media screen and (max-width: 1600px) {
   .content {
-    margin-left: 368px;
+    margin-left: 306px;
     margin-right: 20px;
+  }
+
+  .content__title {
+    margin: 30px 0px 60px 0;
+  }
+
+  .table__heading {
+    height: 88px;
+    margin-bottom: 8px;
+  }
+  .table__searchbar {
+    width: 216px;
+    padding: 6px 0px;
+    margin-right: 10px;
+  }
+  .table__row-text {
+    padding: 24px 21px;
   }
 
   .content__wrapper {
@@ -335,10 +354,11 @@ body {
   .table__headers-list .table__header,
   .table__row-text,
   .table__row-status {
-    font-size: 12px;
+    font-size: 14px;
   }
   .table {
-    height: auto;
+    height: 768px;
+    padding: 14px 39px 26px 39px;
   }
   .table__headers-list::after {
     margin-left: 0;
@@ -352,6 +372,21 @@ body {
     font-size: 12px;
     font-weight: 500;
     margin: 10px 24px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .content {
+    margin-left: 360px;
+  }
+  .table {
+    height: auto;
+  }
+
+  .table__headers-list .table__header,
+  .table__row-text,
+  .table__row-status {
+    font-size: 12px;
   }
 }
 
@@ -393,12 +428,15 @@ body {
     font-size: 10px;
     text-align: center;
   }
+  .table__row-text {
+    padding: 19px 0px;
+  }
   .table__footer {
     margin-top: 10px;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .dashboard-page {
     height: auto;
   }
@@ -544,6 +582,7 @@ body {
   }
   .table__row-pill {
     padding: 0px;
+    font-size: 10px;
   }
   .table__heading {
     margin-bottom: 20px;
@@ -560,9 +599,16 @@ body {
 }
 
 @media screen and (max-width: 360px) {
+  .table__title {
+    font-size: 14px;
+  }
+  .table__subtitle {
+    font-size: 12px;
+  }
   .content__title {
     margin-left: 0px;
     font-size: 18px;
+    margin-bottom: 30px;
   }
 
   .table {
@@ -581,5 +627,13 @@ body {
   .table__page-selector-forward,
   .table__page-selector-back {
     padding: 0px;
+  }
+  .table__row-pill {
+    padding: 2px;
+    font-size: 10px;
+  }
+  .table__searchbar {
+    margin-right: 0;
+    max-width: 140px;
   }
 }
